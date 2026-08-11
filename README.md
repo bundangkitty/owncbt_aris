@@ -1,0 +1,13 @@
+# ゲーム開発部 Offline CBT
+
+이 폴더는 Supabase 없이 동작하는 정적 오프라인 앱입니다. 파일을 iPad에서 직접 여는 방식이 아니라, 정적 웹 호스팅에 한 번 올린 뒤 Safari의 **홈 화면에 추가**로 설치합니다.
+
+## GitHub Pages에 올리기
+
+1. 새 GitHub 저장소를 만들고 이 폴더의 파일을 저장소 최상위에 업로드합니다.
+2. 저장소 **Settings → Pages**에서 `Deploy from a branch`, `main`, `/(root)`를 선택합니다.
+3. 표시된 `https://계정이름.github.io/저장소이름/` 주소를 iPad Safari에서 엽니다.
+4. 공유 → **홈 화면에 추가**를 누릅니다.
+5. PC 관리자 화면에서 내보낸 `.cbtbackup` 파일을 앱에서 가져옵니다.
+
+이 정적 앱에는 문제, Supabase 키, 관리자 PIN이 들어 있지 않습니다. 문제는 사용자가 `.cbtbackup` 파일을 선택했을 때 해당 iPad의 IndexedDB에만 저장됩니다.
